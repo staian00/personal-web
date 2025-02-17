@@ -1,15 +1,9 @@
 import smtplib
 import ssl
-from dotenv import load_dotenv
 import os
 
 
-def configure():
-    load_dotenv()
-
-
 def send_email(sender, text):
-    configure()
     host = os.getenv('HOST')
     port = int(os.getenv('PORT'))
     username = os.getenv('USER')
