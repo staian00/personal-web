@@ -5,7 +5,7 @@ import os
 
 def send_email(sender, text):
     host = os.getenv('HOST')
-    port = int(os.getenv('PORT'))
+    port = 465
     username = os.getenv('USER')
     password = os.getenv('PASSWORD')
     receiver = os.getenv('RECEIVER')
